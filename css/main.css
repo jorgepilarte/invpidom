@@ -1,0 +1,139 @@
+/*Icomoon*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?oyqilt');
+  src:  url('fonts/icomoon.eot?oyqilt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?oyqilt') format('truetype'),
+    url('../fonts/icomoon.woff?oyqilt') format('woff'),
+    url('../fonts/icomoon.svg?oyqilt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+body{
+	background-image: url(../img);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	font-size: 13px;
+}
+.centrar{
+	width: 960px;
+	margin: 0 auto;
+	padding: 12px;
+}
+.figure-img{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+}
+.nav{
+	text-align: left;
+	padding: 20px 0;
+}
+.nav-li{
+	display: inline-block;
+	margin-right: 16px;
+}
+.nav-a{
+	text-decoration: none;
+	color: #535354;
+	padding: 5px 2px;
+	font-size: 16px;
+	/*font-weight: bold;*/
+	font-family: "Arial";
+	
+}
+.medio{
+	height: 500px;
+	padding: 0 5px;
+}
+.medio-div{
+	padding-top: 12px;
+	text-align: center;
+}
+.medio-h2{
+	font-size: 38px;
+	color: #0B5B8C;
+}
+.medio-d{
+	padding: 0.05em 1em;
+	color: ;
+	font-size: 25px;
+}
+.medio-ds{
+	
+	color: #0B5B8C;
+	font-size: 20px;
+	text-align: center;
+}
+.medio-a{
+	padding: 0.5em 1em;
+	color:;
+	background: ;
+}
+.contenedor{
+	background: white;
+}
+.conocenos{
+	text-align: center;
+	padding: 2em 1em;
+	border-bottom: 1px solid gray;
+}
+.conocenos-li{
+	padding: 0.5em 1em;
+	list-style-type: none;
+	display: inline-block;
+}
+.conocenos-a{
+	text-decoration:none;
+}
+.conocenos-span{
+	color: black;
+	font-size: 30px;
+}
+.descripcion{
+	padding: 3em 1em;
+	text-align: center;
+}
+.descripcion-h2{
+	font-size: 32px;
+	font-weight:400;
+}
+.descripcion-span{
+	color: #0B5B8C;
+}
+.descripcion-p{
+	color: #C7C6C6;
+	font-size: 14px;
+}
