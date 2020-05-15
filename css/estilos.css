@@ -1,9 +1,17 @@
+@font-face {
+  font-family: "OpenSans-Regular"; }
+@font-face {
+  font-family: "OpenSans-LightItalic"; }
+@font-face {
+  font-family: "OpenSans-Bold"; }
+@font-face {
+  font-family: "OpenSans-RegularItalic"; }
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: "Open Sans", Arial, Sans-serif;
+  font-family: "OpenSans-Regular", Arial, Sans-serif;
   font-size: 16px;
   background: #f1f1f1; }
 
@@ -34,9 +42,8 @@ header {
       font-size: 3.125em;
       margin-bottom: 0; }
     header .titulos .slogan {
-      margin-bottom: 0.625em;
       font-size: 2.1875em;
-      font-family: "OpenSans-LightItalic";
+      font-weight: 300;
       padding-top: 0;
       color: #f1f1f1;
       margin-bottom: 1.5em; }
@@ -64,7 +71,7 @@ main .acercade {
     font-size: 1.25em; }
   main .acercade span {
     color: #0079C1;
-    font-family: "OpenSans-SemiBold", San Serif;
+    font-family: 300;
     font-size: 1.25em; }
 main .col-center {
   float: none;
