@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-size: 16px;
+  background: #f1f1f1; }
+
+header {
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  header .logo {
+    padding: 1.25em;
+    margin-bottom: 1.25em; }
+  header .menu {
+    list-style: none;
+    text-align: right; }
+    header .menu a {
+      color: #fff;
+      margin-left: 1.25em;
+      margin-bottom: 0;
+      text-decoration: none;
+      display: inline-block;
+      padding: 1.25em 0;
+      font-size: 1.25em; }
+      header .menu a:hover {
+        text-decoration: underline; }
+  header .titulos {
+    color: #fff; }
+    header .titulos .titulo {
+      font-size: 3.125em;
+      margin-bottom: 0; }
+    header .titulos .slogan {
+      margin-bottom: 0.625em;
+      font-size: 2.1875em;
+      font-family: "OpenSans-LightItalic";
+      padding-top: 0;
+      color: #f1f1f1;
+      margin-bottom: 1.5em; }
+  header .slides {
+    margin-bottom: 4.375em; }
+  header .controles {
+    margin-bottom: 4.375em;
+    text-align: center; }
+    header .controles .titulo {
+      color: #424242;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 3.75em;
+      font-weight: 700; }
+
+main .acercade {
+  padding: 1.875em; }
+  main .acercade .acerca {
+    color: #424242;
+    margin-bottom: 1.25em; }
+  main .acercade p {
+    line-height: 2em; }
+  main .acercade .texto {
+    text-align: center;
+    font-size: 1.25em; }
+  main .acercade span {
+    color: #0079C1;
+    font-family: "OpenSans-SemiBold", San Serif;
+    font-size: 1.25em; }
+main .col-center {
+  float: none;
+  margin-right: auto;
+  margin-left: auto; }
+
+footer {
+  background: #000; }
+
+/*# sourceMappingURL=estilos.css.map */
