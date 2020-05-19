@@ -25,17 +25,19 @@ header {
     margin-bottom: 1.25em; }
   header .menu {
     list-style: none;
-    text-align: right; }
+    text-align: right;
+    margin: 2.5em 0; }
     header .menu a {
       color: #fff;
       margin-left: 1.25em;
       margin-bottom: 0;
       text-decoration: none;
       display: inline-block;
-      padding: 1.25em 0;
-      font-size: 1.25em; }
+      padding-bottom: 7px;
+      font-size: 1.25em;
+      border-bottom: 2px solid transparent; }
       header .menu a:hover {
-        text-decoration: underline; }
+        border-bottom: 2px solid #fff; }
   header .titulos {
     color: #fff; }
     header .titulos .titulo {
@@ -68,7 +70,8 @@ main .acercade {
     line-height: 2em; }
   main .acercade .texto {
     text-align: center;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    font-family: 300; }
   main .acercade span {
     color: #0079C1;
     font-family: 300;
@@ -80,5 +83,18 @@ main .col-center {
 
 footer {
   background: #000; }
+
+@media screen and (max-width: 768px) {
+  header .logo {
+    text-align: center;
+    margin-bottom: 0; }
+  header .menu {
+    text-align: center;
+    margin: 1.5em 0; }
+  header .titulos .titulo {
+    font-size: 2.1875em; }
+  header .titulos .slogan {
+    font-size: 1.53125em;
+    margin-bottom: 2.5em; } }
 
 /*# sourceMappingURL=estilos.css.map */

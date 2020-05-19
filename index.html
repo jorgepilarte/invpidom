@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="ccss/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<title>Inversiones PIDOM</title>
 </head>
 <body>
@@ -112,39 +113,95 @@
 			<div class="row py-4">
 				<div class="col-12 col-sm-6 col-lg-4 mb-4">
 					<div class="card bg-success text-white">
-						<div class="card-body">
+						<div class="card-body text-center">
 						<h3 class="card-title text-center prestamos">Prestamos</h3>
-						<p class="card-text">Semanales</p>
-						<p class="card-text">Quincenales</p>
-						<p class="card-text">Mensuales</p>
-						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+						<p class="card-text text-left">Semanales</p>
+						<p class="card-text text-left">Quincenales</p>
+						<p class="card-text text-left">Mensuales</p>
+						<button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#fm-modal">Detalles</button>
 						</div>
-						<img class="card-img-top" src="img/pret.jpg" alt="">
+						<img class="card-img-top" src="img/prestamos.jpg" alt="">
+
 					</div>
+
+					<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+					
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">PRESTAMOS</h5>
+								<button class="close" data-dismiss="modal" aria-label="Cerrar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<h2>Elige el que más te conviene</h2>
+								<p>Las condiciones dependera de la situacion en la que ..</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 mb-4 bg-">
 					<div class="card bg-warning text-white">
-						<div class="card-body">
+						<div class="card-body text-center">
 						<h3 class="card-title text-center prestamos">Recargas</h3>
-						<p class="card-text">Claro</p>
-						<p class="card-text">Altice</p>
-						<p class="card-text">Viva</p>
-						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+						<p class="card-text text-left">Claro</p>
+						<p class="card-text text-left">Altice</p>
+						<p class="card-text text-left">Viva</p>
+						<button class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#rm-modal">Detalles</button>
 						</div>
-						<img class="card-img-top" src="img/recs.jpg" alt="">
+						<img class="card-img-top" src="img/recarga.jpg" alt="">
 					</div>
+					<div class="modal fade" id="rm-modal" tabindex="-1" role="dialog" aria-labelledby="rm-modal" aria-hidden="true">
+					
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">RECARGAS</h5>
+								<button class="close" data-dismiss="modal" aria-label="Cerrar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<h2>Punto de venta</h2>
+								<p>Somo proveedores de recargas</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4 mb-4">
 					<div class="card bg-secondary text-white">
-						<div class="card-body">
+						<div class="card-body text-center">
 						<h3 class="card-title text-center prestamos">Loterias</h3>
-						<p class="card-text">Nacional</p>
-						<p class="card-text">Quiniela Pale</p>
-						<p class="card-text">Otras</p>
-						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+						<p class="card-text text-left">Nacional</p>
+						<p class="card-text text-left">Quiniela Pale</p>
+						<p class="card-text text-left">Otras</p>
+						<button class="btn btn-sm btn-light" data-toggle="modal" data-target="#lm-modal">Destalles</button>
 						</div>
-						<img class="card-img-top" src="img/lot.png" alt="">
+						<img class="card-img-top" src="img/loterias.jpg" alt="">
 					</div>
+					<div class="modal fade" id="lm-modal" tabindex="-1" role="dialog" aria-labelledby="lm-modal" aria-hidden="true">
+					
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">LOTERIAS</h5>
+								<button class="close" data-dismiss="modal" aria-label="Cerrar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<h2>Consorcio Banca Moreno</h2>
+								<p>Si desea ser parte de la gran red de ventas de loterias contactarnos</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 		</div>
