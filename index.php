@@ -11,8 +11,7 @@ if (empty($_POST["submit"])) {
 $para      = 'inversionespidom@gmail.com';
 $titulo    = $nombre;
 $mensaje   = $mensaje;
-$cabeceras = $correo . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+$cabeceras = $correo . "\r\n";
 
 mail($para, $titulo, $mensaje, $cabeceras);
 
@@ -24,9 +23,9 @@ mail($para, $titulo, $mensaje, $cabeceras);
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<title>Inversiones PIDOM</title>
 </head>
@@ -34,10 +33,10 @@ mail($para, $titulo, $mensaje, $cabeceras);
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="logo col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-sm-6 logo">
 					<a href="#"><img src="img/logo.jpg" alt=" "></a>
 				</div>
-				<div class="menu col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-sm-6 menu">
 					<a href="#" id="btacercade" class="">Acerca de</a>
 					<a href="#" id="btservicios" class="">Servicios</a>
 					<a href="#" id="btcontacto" class="">Contacto</a>
@@ -50,7 +49,7 @@ mail($para, $titulo, $mensaje, $cabeceras);
 				<div class="row">
 					<div class="col">
 						<h1 class="titulo">Inversiones PIDOM</h1>
-						<p class="slogan font-italic">La mano en tu negocio</p>
+						<p class="font-italic slogan">La mano en tu negocio</p>
 					</div>
 					
 				</div>
