@@ -1,0 +1,330 @@
+<?php 
+$nombre = "";
+$correo = "";
+$mensaje = "";
+
+if (empty($_POST["submit"])) {
+	$nombre = $_POST["nombre"];
+	$correo = $_POST["correo"];
+	$mensaje = $_POST["mensaje"];
+//Envio de correo
+$para      = 'inversionespidom@gmail.com';
+$titulo    = $nombre;
+$mensaje   = $mensaje;
+$cabeceras = $correo . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($para, $titulo, $mensaje, $cabeceras);
+
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<title>Inversiones PIDOM</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="logo col-xs-12 col-sm-6">
+					<a href="#"><img src="img/logo.jpg" alt=" "></a>
+				</div>
+				<div class="menu col-xs-12 col-sm-6">
+					<a href="#" id="btacercade" class="">Acerca de</a>
+					<a href="#" id="btservicios" class="">Servicios</a>
+					<a href="#" id="btcontacto" class="">Contacto</a>
+				</div>
+			</div>
+		</div>
+
+		<nav class="titulos">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class="titulo">Inversiones PIDOM</h1>
+						<p class="slogan font-italic">La mano en tu negocio</p>
+					</div>
+					
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+			<div class="col">
+				<div class="carousel slide slides" id="slideshow" data-ride="carousel">
+					<!-- Indicadores -->
+					<ol class="carousel-indicators d-none">
+						<li data-target="#slideshow" class="active" data-slide-to="0"></li>
+						<li data-target="#slideshow" data-slide-to="1"></li>
+						<li data-target="#slideshow" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Slides -->
+					<div class="carousel-inner controles">
+						<div class="carousel-item active">
+							<h2 class="titulo">PRESTAMOS</h2>
+
+							<!-- <img src="" alt="" class="d-block w-100"> -->
+						</div>
+						<div class="carousel-item">
+							<h2 class="titulo">RECARGAS</h2>
+							
+							<!-- <img src="" alt="" class="d-block w-100"> -->
+						</div>
+						<div class="carousel-item">
+							<h2 class="titulo">LOTERIAS</h2>
+							
+							<!-- <img src="" alt="" class="d-block w-100"> -->
+						</div>
+					</div>
+
+					<!-- Controles -->
+					<a href="#slideshow" class="carousel-control-prev d-none" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a href="#slideshow" class="carousel-control-next d-none" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Siguiente</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		</div>
+			<!-- Publicidad -->
+		<div class="ad container hidden-xs">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="container">
+		<div class="acercade text-center m-4">
+			<div class="row">
+				<div class="col">
+					<h2 class="acerca" id="acercade">Acerca de</h2>
+					<p class=""><span>Misión:</span></p>
+					 <p class="texto mb-4 text-justify">Laboramos de manera eficiente para llegar a ser la principal fuente de recursos financieros en todos los niveles, personal y de negocios; consiguiendo que toda la clientela se encuentre satisfecha con los servicios comprometidos con nosotros.
+					</p>
+					<p class=""><span>Visión:</span></p>
+					<p class="texto text-justify">Lograr ser el sello sobresaliente en toda nuestra geografía, obteniendo buenos resultados para suplir las carencias de nuestra gama de clientes. </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="servicios">
+			<div class="row">
+				<div class="col">
+					<div class="py-4 border-bottom">
+						<h2 class="text-center" id="servicios" >Servicios</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row py-4">
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="card bg-success text-white">
+						<div class="card-body text-center">
+						<h3 class="card-title text-center prestamos">Prestamos</h3>
+						<p class="card-text text-left">Semanales</p>
+						<p class="card-text text-left">Quincenales</p>
+						<p class="card-text text-left">Mensuales</p>
+						<button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#fm-modal">Detalles</button>
+						</div>
+						<img class="card-img-top" src="img/prestamos.jpg" alt="">
+
+					</div>
+
+					<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+					
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">PRESTAMOS</h5>
+								<button class="close" data-dismiss="modal" aria-label="Cerrar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<h2>Elige el que más te conviene</h2>
+								<p>Las condiciones dependera de la situacion en la que ..</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 mb-4 bg-">
+					<div class="card bg-warning text-white">
+						<div class="card-body text-center">
+						<h3 class="card-title text-center prestamos">Recargas</h3>
+						<p class="card-text text-left">Claro</p>
+						<p class="card-text text-left">Altice</p>
+						<p class="card-text text-left">Viva</p>
+						<button class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#rm-modal">Detalles</button>
+						</div>
+						<img class="card-img-top" src="img/recarga.jpg" alt="">
+					</div>
+					<div class="modal fade" id="rm-modal" tabindex="-1" role="dialog" aria-labelledby="rm-modal" aria-hidden="true">
+					
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">RECARGAS</h5>
+								<button class="close" data-dismiss="modal" aria-label="Cerrar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<h2>Punto de venta</h2>
+								<p>Somo proveedores de recargas</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="card bg-secondary text-white">
+						<div class="card-body text-center">
+						<h3 class="card-title text-center prestamos">Loterias</h3>
+						<p class="card-text text-left">Nacional</p>
+						<p class="card-text text-left">Quiniela Pale</p>
+						<p class="card-text text-left">Otras</p>
+						<button class="btn btn-sm btn-light" data-toggle="modal" data-target="#lm-modal">Destalles</button>
+						</div>
+						<img class="card-img-top" src="img/loterias.jpg" alt="">
+					</div>
+					<div class="modal fade" id="lm-modal" tabindex="-1" role="dialog" aria-labelledby="lm-modal" aria-hidden="true">
+					
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="">LOTERIAS</h5>
+								<button class="close" data-dismiss="modal" aria-label="Cerrar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<h2>Consorcio Banca Moreno</h2>
+								<p>Si desea ser parte de la gran red de ventas de loterias contactarnos</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container bg-dark">
+			<div class="row m-4 text-center text-white">
+				<div class="col mt-4">
+					<h2 id="contacto">Contacto</h2>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col text-center">
+					<form action="" method="post" class="" id="formcontacto">
+						<div class="row">
+							<div class="col-sm-6 col-center">
+								<div class="form-group center">
+									<!-- <label for="nombre">Nombre</label> -->
+									<input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6 col-center">
+								<div class="form-group">
+									<!-- <label for="texto">Correo</label> -->
+									<input type="email" class="form-control" placeholder="Correo" name="correo" id="correo">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6 col-center">
+								<div class="form-group">
+									<!-- <label for="mensaje">Mensaje</label> -->
+									<textarea name="mensaje" id="mensaje" placeholder="Mensaje" class="form-control"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-center">
+								<div class="form-group mb-0 bg-danger text-white rounded">
+									<ul class="list-group" id="error"></ul>
+							
+								</div>
+								
+							</div>
+						
+						</div>
+						
+
+						<button class="btn btn-primary mt-4 mb-4" type="submit">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="ubicacion my-4 text-center">
+				<div class="row">
+					<div class="col">
+						<h4 class="titulo">Ubicacion</h4>
+					</div>
+				</div>
+				<div class="dirrecion">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 lead">
+							<h5>Direccion</h5>
+							<p class="calle"><small>Av. Independencia No. 7,<br> Villa Verde, La Romana, <br> Republica Dominicana<br>Tel. 809 813-4473 <br>inversionespidom(a)gmail.com</small></p>
+						</div>
+						<div class="col-xs-12 col-sm-6 mb-4 lead">
+							<h5>Horario</h5>
+							<p class="entres-semana"><small>Lunes - Viernes <br> 8:00 am - 6:00 pm</small></p>
+							<p class="sabado"><small>Sabados <br> 8:30 am - 5:00 pm</small></p>
+						</div>
+						<div class="col">
+							<iframe  class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.043851661343!2d-68.97071833386092!3d18.436317992265074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf5518f6de52fb%3A0x95e82d5bc291bb80!2sInversiones%20PIDOM%20SRL!5e0!3m2!1ses-419!2sdo!4v1590159803994!5m2!1ses-419!2sdo" width="1000" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</main>
+
+	<footer class="py-4 mb-0">
+		<div class="row">
+			<div class="col-md-6 text-center derecho">
+				<p class="mb-0 m-2 text-white"><small>Derecho reservado Inversiones PIDOM</small></p>
+			</div>
+			<div class="col-md-6 redes text-center">
+				<a class="facebook m-2 btn btn-primary" href="https://www.facebook.com/InvPidom/"><i class="fa fa-facebook"></i></a>
+				<a class="instagram m-2 btn btn-info" href="https://www.instagram.com/invpidom/"><i class="fa fa-instagram"></i></a>
+				<a class="whatsapp m-2 btn btn-success" href="https://wa.me/18098828478"><i class="fa fa-whatsapp"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/efectos.js" ></script>
+	<script src="js/formcontacto.js"></script>
+</body>
+</html>
